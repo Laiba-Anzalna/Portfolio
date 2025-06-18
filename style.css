@@ -1,0 +1,143 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background: #f4f6f8;
+    color: #333;
+  }
+  
+  header {
+    background: linear-gradient(135deg, #800000, #4d0000); /* maroon gradient */
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+  
+  header .btn {
+    background: #922b2b; /* maroon button */
+    padding: 0.7rem 1.4rem;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav {
+    background: #4d0000; /* dark maroon/navy grey */
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+    margin: 0;
+    flex-wrap: wrap;
+  }
+  
+  nav li {
+    margin: 0 10px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  section {
+    margin-bottom: 2rem;
+  }
+  
+  section h2 {
+    border-bottom: 2px solid #ccc; /* light grey border */
+    padding-bottom: 0.5rem;
+    color: #800000; /* maroon heading */
+  }
+  
+  .skills-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .skill {
+    background: #eee; /* light grey skill box */
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .skill:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .carousel {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+  
+  .carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  .carousel img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(128, 0, 0, 0.7); /* maroon overlay button */
+    color: white;
+    border: none;
+    font-size: 1.5rem;
+    padding: 0.3rem 0.7rem;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .prev { left: 10px; }
+  .next { right: 10px; }
+  
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background: #4d0000; /* dark maroon footer */
+    color: white;
+  }
+  
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+  }
+  
+  .fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  
